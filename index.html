@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - Your best run starts here.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="split-layout">
+        
+        <!-- Scenic Left Panel -->
+        <div class="left-panel">
+            <!-- Sky Gradient Background is handled in CSS -->
+            <div class="sunrays"></div>
+            <div class="lens-flare"></div>
+            
+            <div class="scenic-content">
+                <h2 class="motivational-quote">
+                    "Push past the pain.<br>The finish line is waiting."
+                </h2>
+
+                <!-- Subtle Step Counter Widget -->
+                <div class="fitness-widget">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#f97316"/>
+                    </svg>
+                    <div class="widget-data">
+                        <span class="widget-value">12,450</span>
+                        <span class="widget-label">Steps Today</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Runner Silhouette & Grass -->
+            <div class="runner-scene">
+                <div class="grass-layer"></div>
+                <div class="runner-container">
+                    <svg class="runner-svg" viewBox="0 0 100 100" fill="#1e1b4b">
+                        <g class="running-body">
+                            <circle cx="50" cy="20" r="8"/>
+                            <path d="M45,30 L60,40 L55,60 L45,50 Z"/>
+                            <g class="arm-f"><path d="M50,30 L65,45 L75,35" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/></g>
+                            <g class="arm-b"><path d="M50,30 L35,45 L25,35" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" fill="none"/></g>
+                            <g class="leg-f"><path d="M50,60 L65,75 L60,95" stroke="#1e1b4b" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+                            <g class="leg-b"><path d="M50,60 L35,75 L20,70" stroke="#1e1b4b" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clean Right Panel -->
+        <div class="right-panel">
+            <div class="panel-content">
+                
+                <!-- Weather Widget -->
+                <div class="weather-widget">
+                    Today: Perfect running weather 🌤
+                </div>
+
+                <div class="branding">
+                    <div class="brand-top">
+                        <!-- Looping Runner SVG -->
+                        <svg class="mini-runner" viewBox="0 0 24 24" fill="none" stroke="url(#coral-rose)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v.01M16 9.5l-3-1-1-3L9.5 7 7 6M13 13l-1.5-2-3 2v4M16 19l-3-4-1.5 2L10 22M18 13l-2-2"></path>
+                            <defs>
+                                <linearGradient id="coral-rose" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#f97316"/>
+                                    <stop offset="100%" stop-color="#f43f5e"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    
+                    <h1 class="logo">
+                        P<span class="u-heartbeat">
+                            <svg viewBox="0 0 40 40" preserveAspectRatio="none">
+                                <path d="M0,20 L10,20 L15,5 L25,35 L30,20 L40,20" fill="none" stroke="url(#coral-rose)" stroke-width="4" stroke-linejoin="round"/>
+                            </svg>
+                        </span>LSE
+                    </h1>
+                    <p class="tagline">Your best run starts here.</p>
+                </div>
+
+                <form class="login-form">
+                    <div class="input-group">
+                        <input type="email" id="email" class="clean-input" placeholder=" " required>
+                        <label for="email" class="clean-label">Email address</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="password" class="clean-input" placeholder=" " required>
+                        <label for="password" class="clean-label">Password</label>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="cta-btn">LET'S GO &rarr;</button>
+                </form>
+
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-logins">
+                    <button class="social-btn google-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                        </svg>
+                        Google
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.05 2.95.72 3.67 1.84-3.05 1.76-2.55 5.86.31 7.01-.73 1.68-1.55 3.35-2.63 4.16M12.03 7.25C11.96 4.01 14.65 1.2 17.68 1c.15 3.39-2.9 6.27-5.65 6.25"></path>
+                        </svg>
+                        Apple
+                    </button>
+                </div>
+
+                <div class="signup-link">
+                    New to Pulse? <a href="#">Create an account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
